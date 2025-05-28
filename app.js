@@ -29,9 +29,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 // Routes
-const adminRoutes = require('./routes/adminRoutes');
+const adminRoutes = require('./Routes/adminRoutes');
 const authRoutes = require('./Routes/authRoutes');
-const userRoutes = require('./routes/userRoutes');
+const userRoutes = require('./Routes/userRoutes');
 app.use('/', authRoutes);
 app.use('/admin', adminRoutes);
 app.use('/user', userRoutes);
